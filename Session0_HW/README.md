@@ -1,13 +1,13 @@
 Session 0 첫번째 숙제
 =============
     
-## 안녕하세요. 멋쟁이 사자처럼 10기 김민지입니다.
+### 안녕하세요. 멋쟁이 사자처럼 10기 김민지입니다.
 
 저는 미디어학부와 소프트웨어벤처를 전공하고 있습니다. 
     
 제가 좋아하는 가수는 **검정치마** 입니다. 
     
-<img src="https://user-images.githubusercontent.com/101307543/158004869-4311df99-97e3-4154-ac16-322e7eab7bc7.jpg)" />
+![TEAMBABY앨범커버](https://user-images.githubusercontent.com/101307543/158004869-4311df99-97e3-4154-ac16-322e7eab7bc7.jpg)
 
 검정치마의 [이 앨범](https://youtu.be/aCj1Igctb8s)을 들어보세요. 
 '이 앨범'을 클릭하면 앨범을 들을 수 있는 링크로 이동합니다. 
