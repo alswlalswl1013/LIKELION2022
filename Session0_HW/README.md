@@ -8,7 +8,7 @@ Session 0 첫번째 숙제
 
 ![TEAMBABY앨범커버](https://user-images.githubusercontent.com/101307543/158004869-4311df99-97e3-4154-ac16-322e7eab7bc7.jpg)  
 
-검정치마의 [이 앨범](https://youtu.be/aCj1Igctb8s)을 들어보세요.  
+**검정치마**의 [이 앨범](https://youtu.be/aCj1Igctb8s)을 들어보세요.  
 
 '이 앨범'을 클릭하면 앨범을 들을 수 있는 링크로 이동합니다.  
 
