@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'YdestreetB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+img {
+    max-width: 30%;
+    max-height: 100%;
+}
+
+head{
+    color : white;
+    background-color: black;
+    text-align: center; 
+}
+
+body {
+    background-color: black;
+    color: white;  
+    text-align: center;  
+  }
+
+h1,h2,h3{
+    font-family: 'YdestreetB';
+}
+
+table{
+    color:white;
+    background-color:black;  
+    text-align: center; 
+    font-family: 'KoPubDotumMedium';
+    width: 400px;
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'KoPubDotumMedium';
+}
+
+h1 {
+    background-color: black;
+    color:white;
+    padding: 20px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+h3.sns{
+    background-color: rgba(185, 185, 185, 0.356);
+    color:white;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+p.jeju{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+h3.reference{
+    background-color: rgba(0, 0, 139, 0.356);
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+.div.middle title{
+    background-color:rgba(0, 0, 0, 0.336);
+}
