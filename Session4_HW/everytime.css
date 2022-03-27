@@ -1,0 +1,88 @@
+.entire{
+    position: relative;
+    width: 414px;
+    height: 877px;
+
+    background: #FFFFFF;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.에브리타임{
+    position: absolute;
+    height: 18px;
+    left: 25px;
+    top: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #E77474;
+}
+
+.학교정보{
+    position: absolute;
+    height: 27px;
+    left: 25px;
+    top: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.오른쪽상단{
+    position: absolute;
+    width: 65px;
+    height: 25px;
+    left: 321px;
+    top: 34px;
+}
+
+.상단메뉴{
+    position: absolute;
+    width: 369px;
+    height: 178px;
+    left: 23px;
+    top: 110px;
+}
+
+.중간메뉴{
+    position: absolute;
+    width: 380px;
+    height: 106px;
+    left: 17px;
+    top: 323px;
+}
+
+.광고바{
+    position: absolute;
+    width: 369px;
+    height: 103px;
+    left: 23px;
+    top: 466px;    
+}
+
+.즐겨찾는게시판{
+    position: absolute;
+    width: 369px;
+    height: 190px;
+    left: 23px;
+    top: 599px;
+}
+
+.하단바{
+    position: absolute;
+    width: 414px;
+    height: 93px;
+    left: 0px;
+    top: 803px;
+}
