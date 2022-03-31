@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과를 출력하는 페이지</title>
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}" >
+</head>
+<body>
+    <div class="intro"><h1>🦁멋쟁이 사자처럼🦁<br>
+        멋지게 센 글자수</h1></div>
+    
+    <div class="resultanswer"><p>💯 결과값 💯</p></div>
+    <div class="result">
+        <br>
+        <div class="입력한텍스트">입력한 텍스트:<br>{{text}}</div>
+        <br><div class="글자수">글자수 : {{total_len}}</div>
+        <div class="공백제외글자수">공백제외 글자수 : {{no_blank_len}}</div>
+        <div class="단어수">단어수 : {{wordlen}}</div>     
+    </div> 
+</body>
+</html>
