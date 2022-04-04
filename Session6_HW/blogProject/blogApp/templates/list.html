@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 목록 페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}">
+</head>
+<body>
+    <h2>카테고리</h2>
+    <ul>
+        <li><a href="{% url 'category' 'hobby' %}">hobby</a> {{hobby_len}}</li>
+        <li><a href="{% url 'category' 'food' %}">food</a> {{food_len}}</li>
+        <li><a href="{% url 'category' 'programming' %}">programming</a> {{programming_len}}</li>
+    </ul>
+    <a href="{% url 'new' %}">글 쓰러 가기</a>
+</body>
+</html>
