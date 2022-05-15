@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href = "{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 페이지</title>
+</head>
+<body>
+    <div class="content-container">
+        <h3>POSTS </h3>
+        <br>
+        {% if not posts %}
+        <p>게시글이 없습니다</p>
+        {% endif %}
+
+        {% for post in posts %}
+        <li>
+            <a href="{% url 'detail_page' post.pk %}">
+                {{ post.title }}</a>
+            <a>{{ post.view }}</a>
+        </li>
+        {% endfor %}
+    </div>
+
+    <a class = "bb" href="{% url 'create_page' %}">새 글 작성하기</a>
+</body>
+</html>

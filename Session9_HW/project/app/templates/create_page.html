@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href = "{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글을 쓰는 페이지</title>
+</head>
+<body>
+    <div class="content-container">
+        <form method="POST">
+        {% csrf_token %}
+            <label for="title">TITLE</label>
+            <br>
+            <input id="title" name="title" placeholder="제목을 입력하세요" />
+            <br>
+            <label for="content">CONTENT</label>
+            <textarea id="content" name="content" placeholder="내용을 입력하세요">
+            </textarea>
+            <button type="submit">작성하기</button>
+        </form>
+    </div>
+</body>
+</html>
