@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stlyesheet" type="text/css" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block title %}
+HOME
+{% endblock %}
+
+{% block content %}
+    <div class="content-container">
+        <br>
+        {% if not posts %}
+        <p>게시글이 없습니다</p>
+        {% endif %}
+
+        {% for post in posts %}
+        <li>
+            <a href="{% url 'detail_page' post.pk %}">
+                {{ post.title }}</a>
+            <a>{{ post.view }}</a>
+        </li>
+        {% endfor %}
+    </div>
+    <div clas ="new">
+        <a href="{% url 'create_page' %}">새 글 작성하기</a>        
+    </div>
+{% endblock content %}
