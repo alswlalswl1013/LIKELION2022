@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href = "{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수정하는 페이지</title>
+</head>
+<body>
+    <div class="content-container">
+        <form method="POST">
+            {% csrf_token %}
+            <label for="title">TITLE</label>
+            <br>
+            <input name="title" value="{{ post.title }}">
+            <br>
+            <label for="content">CONTENT</label>
+            <textarea name="content">{{ post.content }}
+            </textarea>
+            <button type="submit">수정하기</button>
+        </form>
+    </div>
+</body>
+</html>

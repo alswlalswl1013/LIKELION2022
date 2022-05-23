@@ -1,0 +1,28 @@
+.title{
+    font-size:70px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column ;
+        border: solid 3px brown;
+        margin: 20px;
+        padding: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%; 
+    position: fixed;
+    height: 30px;
+}
+
+
+

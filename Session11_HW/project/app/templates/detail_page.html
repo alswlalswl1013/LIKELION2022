@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stlyesheet" type="text/css" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block title %}
+POST
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+        <div class="contents">
+            <h3>TITLE 
+                <br>
+                {{post.title}}</h3>
+            <span>VIEW {{post.view}} </span>
+            <p>CONTENT 
+                <br><br>
+                {{ post.content }}
+            </p>
+        </div>
+        <a class = "bb" href="{% url 'list_page' %}">목록으로 돌아가기</a>
+        {% if user.is_authenticated and post.author.pkr == user.pk %}
+        <a class = "bb" href="{% url 'edit_page' post.pk%}">수정하기</a>
+        <a class = "bb" href="{% url 'delete' post.pk %}">삭제하기</a>
+        {% endif %}
+    </div>
+
+    {% if user.is_authenticated %}
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="content" placeholder="댓글을 입력해주세요">
+        <button type="sumit">작성하기</button>
+    </form>
+    {% endif %}
+
+    {% for comment in post.comments.all %}
+    <li>
+        {{comment.content}}</li>
+        {% if user.is_authenticated and comment.author.pkr == user.pk %}
+        <a href="{% url 'delete-comment' post.pk comment.pk %}">삭제</a>
+    {% endif %}{% endfor %}
+
+{% endblock content %}
